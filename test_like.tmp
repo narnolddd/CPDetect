@@ -1,0 +1,39 @@
+<FetaOptions>
+    <DataFile>
+        <GraphInput>random.dat</GraphInput>
+        <FormatRead>NNT</FormatRead>
+        <Complex>false</Complex>
+        <FetaFormatWrite>ASCII</FetaFormatWrite>
+    </DataFile>
+    <Action>
+        <Type>Likelihood</Type>
+        <Interval>1</Interval>
+        <Start>11</Start>
+    </Action>
+    <Likelihood>
+    <XVProp>0.0</XVProp>
+    <CalibrationProp>0.0</CalibrationProp>
+</Likelihood>
+    <OperationModel>
+    </OperationModel>
+    <ObjectModel>
+        <Entity>Link</Entity>
+        <Multiply>false</Multiply>
+        <Element>
+            <Type>feta.objectmodel.DegreeModelElement</Type>
+            <Weight>1.0</Weight>
+        </Element>
+    </ObjectModel>
+    <ObjectModel>
+        <Entity>Node</Entity>
+        <Multiply>false</Multiply>
+        <Element>
+            <Type>feta.objectmodel.DegreeModelElement</Type>
+            <Weight>0.2117115526357933</Weight>
+        </Element>
+        <Element>
+            <Type>feta.objectmodel.RandomModelElement</Type>
+            <Weight>0.7882884473642067</Weight>
+        </Element>
+    </ObjectModel>
+</FetaOptions>
