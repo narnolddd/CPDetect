@@ -1,0 +1,13 @@
+<FetaOptions>
+    <DataFile>
+        <GraphInput>CP_BA_Rand.dat</GraphInput>
+        <FormatRead>NNT</FormatRead>
+        <Complex>false</Complex>
+    </DataFile>
+    <Action>
+        <Type>Measure</Type>
+        <DegreeDistribution>false</DegreeDistribution>
+        <Start>1</Start>
+        <Interval>10</Interval>
+    </Action>
+</FetaOptions>

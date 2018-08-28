@@ -1,20 +1,18 @@
 <FetaOptions>
     <DataFile>
-        <GraphInput>random.dat</GraphInput>
+        <GraphOutput>CP_BA_Rand.dat</GraphOutput>
+        <GraphInput>CP_BA_Rand.dat</GraphInput>
         <FormatRead>NNT</FormatRead>
         <Complex>false</Complex>
-        <FetaFormatWrite>ASCII</FetaFormatWrite>
     </DataFile>
     <Action>
-        <Type>Likelihood</Type>
-        <Interval>1</Interval>
-        <Start>11</Start>
+        <Type>Grow</Type>
+        <Start>10000</Start>
     </Action>
-    <Likelihood>
-    <XVProp>0.0</XVProp>
-    <CalibrationProp>0.0</CalibrationProp>
-</Likelihood>
     <OperationModel>
+        <Cliques>false</Cliques>
+        <Type>feta.operationmodel.PreferentialAttachment</Type>
+        <MaxNodes>20000</MaxNodes>
     </OperationModel>
     <ObjectModel>
         <Entity>Link</Entity>
@@ -29,11 +27,7 @@
         <Multiply>false</Multiply>
         <Element>
             <Type>feta.objectmodel.DegreeModelElement</Type>
-            <Weight>AAA</Weight>
-        </Element>
-        <Element>
-            <Type>feta.objectmodel.RandomModelElement</Type>
-            <Weight>BBB</Weight>
+            <Weight>1.0</Weight>
         </Element>
     </ObjectModel>
 </FetaOptions>

@@ -1,40 +1,44 @@
 <FetaOptions>
     <DataFile>
-        <GraphInput>route.txt</GraphInput>
+        <GraphInput>grownnets/CP_BA_Rand.dat</GraphInput>
         <FormatRead>NNT</FormatRead>
         <Complex>false</Complex>
+        <FetaFormatWrite>ASCII</FetaFormatWrite>
     </DataFile>
     <Action>
         <Type>Likelihood</Type>
         <Interval>1</Interval>
-        <Start>19370880</Start>
+        <Start>18001</Start>
+        <Stop>20001</Stop>
     </Action>
+    <Likelihood>
+    <XVProp>0.0</XVProp>
+    <CalibrationProp>0.0</CalibrationProp>
+</Likelihood>
     <OperationModel>
     </OperationModel>
     <ObjectModel>
         <Entity>Link</Entity>
         <Multiply>false</Multiply>
         <Element>
-            <Type>feta.objectmodel.PFPModelElement</Type>
-            <d>0.048</d>
-            <Weight>0.7832795962501872</Weight>
+            <Type>feta.objectmodel.DegreeModelElement</Type>
+            <Weight>0.99</Weight>
         </Element>
         <Element>
-            <Type>feta.objectmodel.RandomModelElement</Type>
-            <Weight>0.21672040374981283</Weight>
+          <Type>feta.objectmodel.RandomModelElement</Type>
+          <Weight>0.010000000000000009</Weight>
         </Element>
     </ObjectModel>
     <ObjectModel>
         <Entity>Node</Entity>
         <Multiply>false</Multiply>
         <Element>
-            <Type>feta.objectmodel.PFPModelElement</Type>
-            <d>0.048</d>
-            <Weight>0.7832795962501872</Weight>
+            <Type>feta.objectmodel.DegreeModelElement</Type>
+            <Weight>0.99</Weight>
         </Element>
         <Element>
             <Type>feta.objectmodel.RandomModelElement</Type>
-            <Weight>0.21672040374981283</Weight>
+            <Weight>0.010000000000000009</Weight>
         </Element>
     </ObjectModel>
 </FetaOptions>

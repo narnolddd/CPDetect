@@ -1,6 +1,6 @@
 <FetaOptions>
     <DataFile>
-        <GraphInput>random.dat</GraphInput>
+        <GraphInput>grownnets/CP_BA_Rand.dat</GraphInput>
         <FormatRead>NNT</FormatRead>
         <Complex>false</Complex>
         <FetaFormatWrite>ASCII</FetaFormatWrite>
@@ -8,7 +8,8 @@
     <Action>
         <Type>Likelihood</Type>
         <Interval>1</Interval>
-        <Start>11</Start>
+        <Start>XXX</Start>
+        <Stop>YYY</Stop>
     </Action>
     <Likelihood>
     <XVProp>0.0</XVProp>
@@ -21,7 +22,11 @@
         <Multiply>false</Multiply>
         <Element>
             <Type>feta.objectmodel.DegreeModelElement</Type>
-            <Weight>1.0</Weight>
+            <Weight>AAA</Weight>
+        </Element>
+        <Element>
+          <Type>feta.objectmodel.RandomModelElement</Type>
+          <Weight>BBB</Weight>
         </Element>
     </ObjectModel>
     <ObjectModel>
@@ -29,11 +34,11 @@
         <Multiply>false</Multiply>
         <Element>
             <Type>feta.objectmodel.DegreeModelElement</Type>
-            <Weight>0.2117115526357933</Weight>
+            <Weight>AAA</Weight>
         </Element>
         <Element>
             <Type>feta.objectmodel.RandomModelElement</Type>
-            <Weight>0.7882884473642067</Weight>
+            <Weight>BBB</Weight>
         </Element>
     </ObjectModel>
 </FetaOptions>
