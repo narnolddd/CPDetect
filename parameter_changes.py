@@ -1,8 +1,11 @@
-import os
+## Python program for obtaining best fitting mixture of models for different segments of a network's growth. Needs a lot of scrubbing up.
 
-like_file = "scripts/test_like.xml"
-like_file_tmp = "scripts/test_like.tmp"
-like_file_tmp_tmp= "scripts/test_like_tmp.tmp"
+import os
+import sys
+
+like_file = sys.argv[1]
+like_file_tmp = like_file.replace(".xml",".tmp")
+like_file_tmp_tmp= like_file.replace(".xml","_tmp.tmp")
 
 final_result="final_MLEs.txt"
 
@@ -47,12 +50,12 @@ for i in range (0,no_segments):
     for j in range(0,100):
         param = j/100
         replace_like_params(param)
-        os.system("java -jar feta2-1.0.0.jar scripts/test_like_tmp.tmp > like_vals.tmp")
+        os.system("java -jar feta2-1.0.0.jar "+like_file_tmp_tmp+" > like_vals.tmp")
         with open("like_vals.tmp",'r') as f:
             like = float(f.readline().split()[12])
         if like > max_like:
             max_like = like; MLE = param;
-    f3.write("%d %f %f \n" % (likestart, MLE, max_like))
+    f3.write("%d %f %f \n" % (likestart + interval/2, MLE, max_like))
     likestart=likestart+interval
 
 f3.close()

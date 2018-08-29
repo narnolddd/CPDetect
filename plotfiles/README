@@ -1,0 +1,3 @@
+This folder contains gnuplot files for obtaining the various plots. Run as:
+
+gnuplot [whateverplottingfile.gnu]

@@ -1,6 +1,6 @@
 <FetaOptions>
     <DataFile>
-        <GraphInput>CP_BA_Rand.dat</GraphInput>
+        <GraphInput>grownnets/test1CP_BA_to_rand.dat</GraphInput>
         <FormatRead>NNT</FormatRead>
         <Complex>false</Complex>
     </DataFile>
@@ -8,6 +8,6 @@
         <Type>Measure</Type>
         <DegreeDistribution>false</DegreeDistribution>
         <Start>1</Start>
-        <Interval>10</Interval>
+        <Interval>100</Interval>
     </Action>
 </FetaOptions>

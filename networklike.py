@@ -1,11 +1,7 @@
+## Work in progress for using simulated annealing for fitting network combination parameters
+
 import os
 import numpy as np
-edgelist = []
-operations = []
-nodelist = []
-neighbours = []
-
-# os.system("java -jar feta2-1.0.0.jar test_growth.xml")
 
 coolRate = 0.5
 init_guess=0.5 #Initial parameter guess

@@ -1,18 +1,18 @@
 <FetaOptions>
     <DataFile>
-        <GraphOutput>GOUTPUT</GraphOutput>
-        <GraphInput>GINPUT</GraphInput>
+        <GraphOutput>grownnets/test1CP_BA_to_rand.dat</GraphOutput>
+        <GraphInput>grownnets/test1CP_BA_to_rand.dat</GraphInput>
         <FormatRead>NNT</FormatRead>
         <Complex>false</Complex>
     </DataFile>
     <Action>
         <Type>Grow</Type>
-        <Start>START</Start>
+        <Start>4500</Start>
     </Action>
     <OperationModel>
         <Cliques>false</Cliques>
         <Type>feta.operationmodel.PreferentialAttachment</Type>
-        <MaxNodes>STOP</MaxNodes>
+        <MaxNodes>9000</MaxNodes>
     </OperationModel>
     <ObjectModel>
         <Entity>Link</Entity>
@@ -27,11 +27,11 @@
         <Multiply>false</Multiply>
         <Element>
             <Type>feta.objectmodel.DegreeModelElement</Type>
-            <Weight>AAA</Weight>
+            <Weight>0</Weight>
         </Element>
         <Element>
           <Type>feta.objectmodel.RandomModelElement</Type>
-          <Weight>BBB</Weight>
+          <Weight>1</Weight>
         </Element>
     </ObjectModel>
 </FetaOptions>
